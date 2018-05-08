@@ -16,9 +16,11 @@ EC2
 After a new instance is created
 S3
 1.	Created a Bucket name Leidosproject and made the bucket publicly accessible
-2.	 uploaded index.html
-3.	Copied the index.html to var/www/html
-4.	aws s3 cp s3://leidosproject/index.html /var/www/html
+2.	Attach S3-Admin Access role to instance
+3.	uploaded index.html
+4.	Copied the index.html to var/www/html
+5.	aws s3 cp s3://leidosproject/index.html /var/www/html
+
 Source Code Management 
 Created a public Repo named Leidos project 
 
