@@ -1,0 +1,27 @@
+					LEIDOS PROJECT 
+
+Services Used
+IAM
+1.	Created a role with EC2-Admin Access and S3-Admin Access (AWS Service role EC2)
+2.	Attached Full Admin Access Policy
+EC2
+1.	Created EC2 instance with IAM role(EC2-Admin) and attached to that instance
+2.	Created Security group and Keypair
+3.	Made the key private to root user Chmod 400 to LeidosKey.pem
+4.	Created bash Script to launch EC2 instance and user-data file to install updates and application package
+5.	Made the script executable chmod +x apache.sh
+6.	Launched an EC2 instance -using bash script that uses AWS CLI and user-data
+7.	Ran the Script
+
+After a new instance is created
+S3
+1.	Created a Bucket name Leidosproject and made the bucket publicly accessible
+2.	 uploaded index.html
+3.	Copied the index.html to var/www/html
+4.	aws s3 cp s3://leidosproject/index.html /var/www/html
+Source Code Management 
+Created a public Repo named Leidos project 
+
+Added the changes and committed the code, finally pushed the code to remote repository   
+
+ Link to the httpd webserver 34.239.120.147
