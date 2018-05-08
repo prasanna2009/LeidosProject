@@ -6,7 +6,7 @@ IAM
 2.	Attached Full Admin Access Policy
 EC2
 1.	Created EC2 instance with IAM role(EC2-Admin) and attached to that instance
-2.	Created Security group and Keypair
+2.	Created Security group and Keypair(SSH=22 ,HTTP=80, HTTPS=443)
 3.	Made the key private to root user Chmod 400 to LeidosKey.pem
 4.	Created bash Script to launch EC2 instance and user-data file to install updates and application package
 5.	Made the script executable chmod +x apache.sh
